@@ -15,9 +15,12 @@ body{background:var(--bg);color:var(--dark);line-height:1.6}
 
 /* Header */
 header{background:white;box-shadow:0 2px 8px rgba(0,0,0,0.05);position:sticky;top:0;z-index:50}
-.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
-.logo{height:44px;width:auto;border-radius:6px}
-.btn-cta{background:var(--blue);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0;gap:8px}
+.brand{display:flex;align-items:center;gap:10px}
+.logo{height:44px;width:auto;border-radius:6px;flex-shrink:0}
+.logo-text{font-size:15px;font-weight:800;color:var(--blue);line-height:1.2}
+.logo-text span{font-size:11px;color:var(--grey);font-weight:600;display:block}
+.btn-cta{background:var(--blue);color:white;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:700;font-size:13px;white-space:nowrap}
 
 /* Hero */
 .hero{background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);color:white;padding:50px 0;text-align:center}
@@ -71,13 +74,21 @@ footer b{color:white}
   .hero h1{font-size:40px}
   .contact-grid{grid-template-columns:repeat(2,1fr)}
   .form-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .logo-text{font-size:18px}
+  .logo-text span{font-size:12px}
+  .btn-cta{padding:10px 16px;font-size:14px}
 </style>
 </head>
 <body>
 
 <header>
   <div class="container nav">
-    <img src="https://files.catbox.moe/6t2bxr.jpg" class="logo" alt="TITB Tyre Services Logo">
+    <div class="brand">
+      <img src="https://files.catbox.moe/6t2bxr.jpg" class="logo" alt="TITB Logo">
+      <div class="logo-text">TITB Tyre Services 
+        <span>& Automotive Spares</span>
+      </div>
+    </div>
     <a href="tel:+27791194483" class="btn-cta">📞 Call Now</a>
   </div>
 </header>
