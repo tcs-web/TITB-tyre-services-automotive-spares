@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TITB Tyre Services & Automotive Spares</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+:root{
+  --blue:#1d4ed8; --dark:#0f172a; --grey:#475569; --bg:#f8fafc; --green:#16a34a; --red:#dc2626;
+}
+*{box-sizing:border-box;margin:0;padding:0;font-family:'Inter',Arial,sans-serif}
+body{background:var(--bg);color:var(--dark);line-height:1.6}
+.container{max-width:1100px;margin:0 auto;padding:0 16px}
+
+/* Header */
+header{background:white;box-shadow:0 2px 8px rgba(0,0,0,0.05);position:sticky;top:0;z-index:50}
+.nav{display:flex;justify-content:space-between;align-items:center;padding:10px 0}
+.logo{height:44px;width:auto;border-radius:6px}
+.btn-cta{background:var(--blue);color:white;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#1e3a8a 0%,#1d4ed8 100%);color:white;padding:50px 0;text-align:center}
+.hero h1{font-size:28px;font-weight:800;margin-bottom:10px}
+.hero p{font-size:15px;opacity:0.9;margin-bottom:20px}
+.badges{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:12px}
+.badge{background:rgba(255,255,255,0.15);padding:6px 10px;border-radius:20px;font-size:12px;font-weight:600}
+
+/* Sections */
+section{padding:40px 0}
+h2{font-size:22px;font-weight:800;color:var(--dark);margin-bottom:16px;text-align:center}
+.card{background:white;padding:20px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.05)}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+.service-item{text-align:center;padding:16px}
+.service-item h3{font-size:16px;font-weight:700;margin:8px 0;color:var(--blue)}
+.service-item p{font-size:14px;color:var(--grey)}
+
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:20px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px;box-shadow:0 2px 6px rgba(0,0,0,0.1)}
+@media(min-width:768px){.gallery{grid-template-columns:repeat(3,1fr)} .gallery img{height:220px}}
+
+/* Specials */
+.specials{background:linear-gradient(135deg,var(--red) 0%,#ef4444 100%);color:white;padding:40px 0}
+.special-card{background:rgba(255,255,255,0.95);color:var(--dark);border-radius:12px;padding:16px;margin-bottom:12px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.special-card h3{font-size:16px;font-weight:800;margin-bottom:2px}
+.special-card p{font-size:13px;color:var(--grey)}
+.price-tag{background:var(--red);color:white;padding:8px 12px;border-radius:8px;font-weight:800;font-size:16px;white-space:nowrap}
+
+/* Form */
+.form-group{margin-bottom:12px}
+label{display:block;font-size:13px;font-weight:600;margin-bottom:4px;color:var(--grey)}
+input,select,textarea{width:100%;padding:10px;border:1.5px solid #cbd5e1;border-radius:8px;font-size:14px}
+textarea{resize:none;min-height:80px}
+.btn{display:inline-block;background:var(--blue);color:white;padding:12px 16px;border-radius:8px;text-decoration:none;font-weight:700;font-size:14px;border:none;cursor:pointer;width:100%}
+.btn.green{background:var(--green)}
+.btn.red{background:var(--red)}
+.btn-row{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+
+/* Contact */
+.contact-grid{display:grid;grid-template-columns:1fr;gap:16px;margin-top:20px}
+.contact-item{display:flex;gap:12px;align-items:flex-start}
+.icon{width:40px;height:40px;background:#dbeafe;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px}
+
+/* Footer */
+footer{background:var(--dark);color:#cbd5e1;padding:24px 0;text-align:center;font-size:13px;margin-top:40px}
+.footer-logo{height:50px;width:auto;margin-bottom:10px;filter:brightness(0) invert(1)}
+footer b{color:white}
+
+@media(min-width:768px){
+  .hero h1{font-size:40px}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+  .form-2col{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <img src="https://files.catbox.moe/6t2bxr.jpg" class="logo" alt="TITB Tyre Services Logo">
+    <a href="tel:+27791194483" class="btn-cta">📞 Call Now</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1>New & Used Tyres, Mag Rims & Spares</h1>
+    <p>All vehicle types. Quality parts. Best prices in Burgersfort.</p>
+    <div class="badges">
+      <div class="badge">🚗 New Tyres</div>
+      <div class="badge">♻️ Used Tyres</div>
+      <div class="badge">🛞 Mag Rims</div>
+      <div class="badge">⚙️ Vehicle Spares</div>
+    </div>
+    <div style="margin-top:20px" class="btn-row">
+      <a href="tel:+27791194483" class="btn">📞 Call +27 79 119 4483</a>
+      <a href="#quote" class="btn green">📝 Get a Quote</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>What We Do</h2>
+    <div class="services">
+      <div class="card service-item">
+        <h3>New & Used Tyres</h3>
+        <p>All sizes for cars, bakkies, SUVs & 4x4s. Fitted on-site.</p>
+      </div>
+      <div class="card service-item">
+        <h3>Used Mag Rims</h3>
+        <p>Quality mags for all vehicle types. Various styles in stock.</p>
+      </div>
+      <div class="card service-item">
+        <h3>Automotive Spares</h3>
+        <p>All vehicle spares available. Ask us for your part.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="background:white">
+  <div class="container">
+    <h2>Our Stock & Work</h2>
+    <div class="gallery">
+      <img src="https://files.catbox.moe/nocsjh.jpg" alt="Tyres stock">
+      <img src="https://files.catbox.moe/cjq867.jpg" alt="Mag rims">
+      <img src="https://files.catbox.moe/l0okzf.jpg" alt="Tyres">
+      <img src="https://files.catbox.moe/bh3092.jpg" alt="Automotive parts">
+      <img src="https://files.catbox.moe/59myig.jpg" alt="Tyres">
+      <img src="https://files.catbox.moe/a04ewd.jpg" alt="Rims">
+      <img src="https://files.catbox.moe/xeykhm.jpg" alt="Spares">
+      <img src="https://files.catbox.moe/5tip7q.jpg" alt="Tyres">
+      <img src="https://files.catbox.moe/z0gjdu.jpg" alt="Shop">
+    </div>
+  </div>
+</section>
+
+<!-- 🔥 SPECIALS SECTION -->
+<section id="specials" class="specials">
+  <div class="container">
+    <h2 style="color:white">🔥 Weekly Specials</h2>
+    <p style="text-align:center;margin-bottom:20px;font-size:14px;opacity:0.95">Limited stock. While supplies last.</p>
+    
+    <div class="special-card">
+      <div>
+        <h3>Used 195/65R15 Tyres</h3>
+        <p>Good tread, no plugs. Set of 4</p>
+      </div>
+      <div class="price-tag">R1200</div>
+    </div>
+
+    <div class="special-card">
+      <div>
+        <h3>15" 4x100 Mag Rims</h3>
+        <p>Set of 4 with centre caps</p>
+      </div>
+      <div class="price-tag">R2800</div>
+    </div>
+
+    <div class="special-card">
+      <div>
+        <h3>New 265/70R16 AT Tyres</h3>
+        <p>All-Terrain. Fitted + Balance</p>
+      </div>
+      <div class="price-tag">From R2200</div>
+    </div>
+
+    <a href="#quote" class="btn" style="margin-top:8px;background:white;color:var(--red)">Claim This Deal on WhatsApp</a>
+  </div>
+</section>
+
+<section id="quote" style="background:#eff6ff">
+  <div class="container">
+    <h2>📝 Get a Free Quote</h2>
+    <div class="card">
+      <form id="quoteForm">
+        <div class="form-2col">
+          <div class="form-group">
+            <label>Your Name</label>
+            <input type="text" id="qName" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Your Number</label>
+            <input type="tel" id="qPhone" placeholder="07..." required>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label>What do you need?</label>
+          <select id="qType" required>
+            <option value="">Select...</option>
+            <option>New Tyres</option>
+            <option>Used Tyres</option>
+            <option>Mag Rims</option>
+            <option>Vehicle Spares</option>
+            <option>Other</option>
+          </select>
+        </div>
+
+        <div class="form-2col">
+          <div class="form-group">
+            <label>Tyre Size / Vehicle</label>
+            <input type="text" id="qSize" placeholder="e.g. 195/65R15 or Toyota Hilux">
+          </div>
+          <div class="form-group">
+            <label>Quantity</label>
+            <input type="number" id="qQty" placeholder="4" min="1">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Extra Details</label>
+          <textarea id="qMsg" placeholder="Brand preference, budget, etc"></textarea>
+        </div>
+
+        <button type="submit" class="btn green">💬 Send Quote Request via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-grid">
+      <div class="card contact-item">
+        <div class="icon">📍</div>
+        <div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:4px">Address</h3>
+          <p style="font-size:14px;color:var(--grey)">
+            Stand no 490<br>
+            Tswelepele<br>
+            Bothashoek<br>
+            Burgersfort, 1150
+          </p>
+          <a href="https://maps.google.com/?q=Bothashoek+Burgersfort+1150" target="_blank" class="btn">Open in Maps</a>
+        </div>
+      </div>
+      
+      <div class="card contact-item">
+        <div class="icon">📞</div>
+        <div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:4px">Call / WhatsApp</h3>
+          <p style="font-size:14px;color:var(--grey)">+27 79 119 4483</p>
+          <div class="btn-row">
+            <a href="tel:+27791194483" class="btn">Call Now</a>
+            <a href="https://wa.me/27791194483" target="_blank" class="btn green">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="card contact-item">
+        <div class="icon">✉️</div>
+        <div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:4px">Email</h3>
+          <p style="font-size:14px;color:var(--grey)">Add your email here</p>
+          <a href="mailto:info@titb.co.za" class="btn" style="background:#64748b">Email Us</a>
+        </div>
+      </div>
+
+      <div class="card contact-item">
+        <div class="icon">🕒</div>
+        <div>
+          <h3 style="font-size:16px;font-weight:700;margin-bottom:4px">Trading Hours</h3>
+          <p style="font-size:14px;color:var(--grey)">
+            Mon - Fri: 08:00 - 17:00<br>
+            Sat: 08:00 - 13:00<br>
+            Sun: Closed
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <img src="https://files.catbox.moe/6t2bxr.jpg" class="footer-logo" alt="TITB Logo"><br>
+    <b>TITB Tyre Services & Automotive Spares</b><br>
+    Stand no 490, Tswelepele, Bothashoek, Burgersfort 1150 | +27 79 119 4483<br>
+    © 2026 All Rights Reserved
+  </div>
+</footer>
+
+<script>
+document.getElementById('quoteForm').addEventListener('submit', function(e){
+  e.preventDefault();
+  
+  const name = document.getElementById('qName').value;
+  const phone = document.getElementById('qPhone').value;
+  const type = document.getElementById('qType').value;
+  const size = document.getElementById('qSize').value;
+  const qty = document.getElementById('qQty').value;
+  const msg = document.getElementById('qMsg').value;
+
+  const text = `*New Quote Request - TITB Tyres*%0A%0A
+*Name:* ${name}%0A
+*Number:* ${phone}%0A
+*Need:* ${type}%0A
+*Size/Vehicle:* ${size || 'N/A'}%0A
+*Quantity:* ${qty || 'N/A'}%0A
+*Details:* ${msg || 'N/A'}`;
+
+  window.open(`https://wa.me/27791194483?text=${text}`, '_blank');
+});
+</script>
+
+</body>
+</html>
